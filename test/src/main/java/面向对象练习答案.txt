@@ -1,0 +1,74 @@
+1、 c
+2、 不能编译通过 输出 method(i)方法必须有返回值
+3、 abd
+4、 10， 11
+5、 不能通过编译 需要提供带参数的构造器和无参构造器
+6、 public class Dog {
+       String name;
+       int age;
+       boolean sexual;
+
+       public Dog() {
+       }
+
+       public Dog(String name, int age, boolean sexual) {
+           this.name = name;
+           this.age = age;
+           this.sexual = sexual;
+       }
+
+       public void play(){
+           System.out.println(name + "play");
+       }
+
+       public void play(int n){
+           System.out.println(name + "play" + n + "minutes");
+       }
+   }
+   class TestDog{
+       public static void main(String[] args) {
+           Dog dog = new Dog("joy", 2, false);
+
+           dog.play();
+           dog.play(30);
+       }
+   }
+
+7、 c
+8、 c
+9、 this(name);必须放在构造器的第一句
+10、 public class Worker {
+        String name;
+        int age;
+        double salary;
+
+        @Override
+        public String toString() {
+            return "Worker{" +
+                    "name='" + name + '\'' +
+                    ", age=" + age +
+                    ", salary=" + salary +
+                    '}';
+        }
+
+        public Worker() {
+        }
+
+        public Worker(String name, int age, double salary) {
+            this.name = name;
+            this.age = age;
+            this.salary = salary;
+        }
+
+        public void work() {
+            Worker worker = new Worker("aa", 18, 1.1);
+            System.out.println(worker);
+        }
+
+        public void work(int hours){
+            Worker worker = new Worker("aa", 18, 1.1);
+            System.out.println(worker);
+            System.out.println(hours);
+        }
+    }
+11、
